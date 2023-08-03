@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>my Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/apple-touch-icon.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <div class="body"></div>
+
+    <div class="container">
+
+        <div class="calculator">
+
+            <!-- display results  -->
+            <div class="display_res">
+                <textarea id="prev-res" cols="40" rows="7"></textarea>
+                <input type="text" class="display-res">
+            </div>
+
+            <!-- buttons  -->
+
+            <div class="button-container">
+
+                <!-- left 3 btns -->
+                <div class="button-btns">
+
+                    <!-- top buttons  -->
+                    <div class="left3-top">
+                        <div class="top" id="ac">AC</div>
+                        <div class="top" onclick="backspace()">←</div>
+                        <div class="top" onclick="display('%')">%</div>
+                    </div>
+
+                    <!-- middle btns  -->
+                    <div class="left3-middle">
+                        <div class="middle" onclick="display('9')">9</div>
+                        <div class="middle" onclick="display('8')">8</div>
+                        <div class="middle" onclick="display('7')">7</div>
+
+                        <div class="middle" onclick="display('6')">6</div>
+                        <div class="middle" onclick="display('5')">5</div>
+                        <div class="middle" onclick="display('4')">4</div>
+
+                        <div class="middle" onclick="display('3')">3</div>
+                        <div class="middle" onclick="display('2')">2</div>
+                        <div class="middle" onclick="display('1')">1</div>
+                    </div>
+
+                    <!-- bottom btns -->
+                    <div class="left3-bottom">
+                        <div class="bottom" id="zero" onclick="display('0')">0</div>
+                        <div class="bottom" onclick="display('.')">.</div>
+                    </div>
+
+                </div>
+
+                <!-- right 1 btns  -->
+                <div class="right-btns">
+
+                    <div class="right" onclick="display('/')">/</div>
+                    <div class="right" onclick="display('*')">x</div>
+                    <div class="right" onclick="display('-')">-</div>
+                    <div class="right" onclick="display('+')">+</div>
+
+                    <div class="right" onclick="solve()">=</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="me">Created by Jitendriya Meher</div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

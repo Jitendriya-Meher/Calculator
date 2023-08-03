@@ -1,0 +1,163 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-image: url("./assets/—Pngtree—hand\ drawn\ math\ education\ calculator_1178880.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(2px);
+}
+
+.container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("");
+    background-color: transparent;
+    background-size: cover;
+}
+
+.calculator{
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 10px 10px 15px rgba(0,0,0,0.5);
+}
+
+.display_res{
+    width: 288px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prev-res{
+    width: 275px;
+    height: 100%;
+    outline: none;
+    background-color: #000;
+    border: none;
+    color: #dbd8d3;
+    font-size: 20px;
+    overflow-y:hidden;
+    overflow-x: hidden;
+    text-align: right;
+    resize: none;
+
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 30px;
+}
+
+.display-res{
+    width: 275px;
+    height: 100px;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 40px;
+    overflow-y: hidden;
+    text-align: right;
+    resize: none;
+}
+
+/* buttons */
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.left3-top{
+    display: flex;
+}
+
+.top ,
+.middle ,
+.bottom ,
+.right {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.top{
+    background-color: rgb(224, 240, 255);
+}
+
+.middle{
+    background-color: rgb(145, 145, 145);
+}
+
+.bottom{
+    background-color: rgb(145, 145, 145);
+}
+
+.right{
+    background-color: orange;
+    color: white;
+}
+
+.left3-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 210px;
+    color: white;
+}
+
+.left3-bottom{
+    display: flex;
+    color: white;
+}
+
+#zero{
+    width: 130px;
+    align-items: center;
+    text-align: left;
+}
+
+.right-btns{
+    margin-left: 2px;
+    display: flex;
+    flex-direction: column
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.me{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    color: black;
+    font-size: 21px;
+    font-weight: 600;
+}
